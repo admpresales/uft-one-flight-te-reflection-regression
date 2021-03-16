@@ -7,7 +7,14 @@ SystemUtil.Run "C:\Program Files (x86)\Mercury Int. Year2000 Demo Server\term_se
 Window("3270/5250 server").Minimize
 wait 2
 SystemUtil.Run "C:\Users\demo\Documents\Micro Focus\Reflection\Reflection Flight.rd3x"
-wait 20
+
+' the following code replaces a wait 20 line that didn't work too well :-)
+For Iterator = 1 To 20 Step 1
+	if TeWindow("TeWindow").TeScreen("VIRTUAL MACHINE/SYSTEM").Exist (Iterator) then
+	 	wait 2
+		Exit for
+	end if
+next
 
 ' Logon
 
