@@ -1,4 +1,4 @@
-'To run this script, first configure Tools > Options > GUI Testing > Terminal Emulator
+' To run this script, first configure Tools > Options > GUI Testing > Terminal Emulator
 ' and set Termina emulator to Reflection Desktop
 '
 ' Start by closing down any previous processes that we want to start next
