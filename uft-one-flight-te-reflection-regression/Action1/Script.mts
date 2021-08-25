@@ -1,4 +1,7 @@
-﻿' Start by closing down any previous processes that we want to start next
+'To run this script, first configure Tools > Options > GUI Testing > Terminal Emulator
+' and set Termina emulator to Reflection Desktop
+'
+' Start by closing down any previous processes that we want to start next
 SystemUtil.CloseProcessByName "term_serv.exe" @@ hightlight id_;_787918_;_script infofile_;_ZIP::ssf120.xml_;_
 SystemUtil.CloseProcessByName "Attachmate.Emulation.Frame.exe"
 
